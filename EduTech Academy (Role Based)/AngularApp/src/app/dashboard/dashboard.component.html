@@ -1,0 +1,33 @@
+
+ <h2 id="education">EduTech Academy</h2>
+<div class="container">
+  <h3 id="header">{{ getDashboardTitle() }}</h3>
+  <div *ngIf="userRole === 'student'">
+    <span id="dashboard">Dashboard</span>
+    <span id="courses">Courses</span>
+    <span id="assignments">Assignments</span>
+    <span id="grades">Grades</span>
+  </div>
+  <div *ngIf="userRole === 'staff'">
+    <span id="manageCourse">Manage Courses</span>
+    <span id="manageStudents">Manage Students</span>
+    <span id="assignments">Assignments</span>
+    <span id="grading">Grading</span>
+  </div>
+  <div *ngIf="userRole === 'admin'">
+    <span id="administrative">Administrative Tools</span>
+    <span id="reports">Reports</span>
+    <span id="enrollment">Enrollment</span>
+    <span id="staffManagement">Staff Management</span>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+	 	  	      	  	  			  	 	
